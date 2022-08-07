@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("Please enter image width: ");
+        Scanner sc = new Scanner(System.in);
+        double imagewidth = sc.nextDouble();
+        System.out.println("Please enter image height: ");
+        double imageheight = sc.nextDouble();
+        if (imageheight >= imagewidth) {
+            System.out.println(" Your image is in Portrait mode");
+        } else {
+            System.out.println(" Your image is in Landscape mode");
+        }
+
+    }
+}
